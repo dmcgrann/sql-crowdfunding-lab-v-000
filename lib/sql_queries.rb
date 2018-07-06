@@ -8,7 +8,7 @@
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
   "SELECT projects.* FROM projects
-    JOIN pledges ON pledges.amount = projects.id" 
+    JOIN pledges ON pledges.id = projects.id" 
    
 end
 
