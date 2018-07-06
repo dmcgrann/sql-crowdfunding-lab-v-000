@@ -1,5 +1,3 @@
-sqlite3 crowdfunder.db
-
 CREATE TABLE projects (
 id INTEGER PRIMARY KEY,
   title TEXT,
