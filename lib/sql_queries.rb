@@ -32,7 +32,8 @@ def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_th
   "SELECT users.name, SUM(pledges.amount) AS total_pledge
     FROM (pledges INNER JOIN users ON pledges.user_id = users.id)
     GROUP BY users.id
-    ORDER BY SUM(pledges.amount) ASC, users.name ASC"
+    ORDER BY SUM(pledges.amount) ASC
+    ORDER BY users.name ASC"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
