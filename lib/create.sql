@@ -6,3 +6,5 @@ CREATE TABLE projects (
     end_date DATE
 );
 
+CREATE TABLE users (
+  )
